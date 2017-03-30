@@ -1,4 +1,10 @@
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
 <body bgcolor="grey">
 
 <h1>My First Heading</h1>
@@ -15,6 +21,48 @@
 <p>HTML kbd 元素表示键盘输入：</p>
 
 <p><kbd>File | Open...</kbd></p>
+
+<form>
+<fieldset>
+<legend>Personal information:</legend>
+<input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+</form> 
+<br>
+<form action="action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form> 
+
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab" selected>Buick</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+
+</select>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+<button type="button" onclick="alert('Oyeah')">Click Me!</button>
+
+
+
+<p>If you click "Submit", the form-data will be sent to a page called "action_page.php".</p>
+
+<form>
+<input type="checkbox" name="ppap" value="Pen">I have a Pen
+<br>
+<input type="checkbox" name="ppap" value="Apple">I have an Apple 
+</form> 
 
 </body>
 
