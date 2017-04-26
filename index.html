@@ -3,7 +3,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+<script>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="My First JavaScript Function";
+}
+</script>
+</head>
 
 <body bgcolor="grey">
 
@@ -21,7 +27,8 @@
 <p>HTML kbd 元素表示键盘输入：</p>
 
 <p><kbd>File | Open...</kbd></p>
-
+<p id="demo">Change</p>
+<button type="button" onclick="myfunction()">boom</button> 
 <form>
 <fieldset>
 <legend>Personal information:</legend>
@@ -63,6 +70,30 @@ The cat was playing in the garden.
 <br>
 <input type="checkbox" name="ppap" value="Apple">I have an Apple 
 </form> 
+
+<input type="button"
+onclick="document.body.style.backgroundColor='lavender';"
+value="改变背景色">
+<div 
+onmousedown="mDown(this)" 
+onmouseup="mUp(this)" 
+style="background-color:#D94A38;width:200px;height:50px;padding-top:25px;text-align:center;">
+点击这里
+</div>
+
+<script>
+function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+obj.innerHTML="松开鼠标"
+}
+
+function mUp(obj)
+{
+obj.style.backgroundColor="#D94A38";
+obj.innerHTML="谢谢你"
+}
+</script>
 
 </body>
 
